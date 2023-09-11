@@ -4,16 +4,14 @@
 
 youtubeチャンネルはこちら [https://www.youtube.com/channel/UCzpY7GBbWJFHA3JVjkgbAjA](https://www.youtube.com/channel/UCzpY7GBbWJFHA3JVjkgbAjA)
 
-ブログで内容を見るにはこちら [https://labo.nozomi.bike/?q=%E3%81%AE%E3%82%93%E3%83%A9%E3%83%9C](https://labo.nozomi.bike/?q=%E3%81%AE%E3%82%93%E3%83%A9%E3%83%9C)
-
 ## 環境
 
 |-|-|
 |---|---|
 |Nginx|1.19系|
-|PHP|7.4系|
+|PHP|8.2系|
 |MySQL|8.0系|
-|Composer|1.10系|
+|Composer|2.5系|
 |Node|latest|
 
 ### VSCode 設定
