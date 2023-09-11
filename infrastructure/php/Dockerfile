@@ -25,8 +25,10 @@ RUN set -eux && \
         tzdata && \
     cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime && \
     echo ${TZ} > /etc/timezone && \
+    pecl install xdebug && \
     apk del .build-dependencies && \
     docker-php-ext-install -j$(nproc) intl mbstring pdo_mysql gd zip bcmath && \
-    docker-php-ext-configure gd --with-freetype=/usr/include/ --with-jpeg=/usr/include/
+    docker-php-ext-configure gd --with-freetype=/usr/include/ --with-jpeg=/usr/include/ && \
+    docker-php-ext-enable xdebug
 
 COPY php.ini /usr/local/etc/php
